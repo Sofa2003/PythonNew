@@ -47,6 +47,7 @@ if __name__ == '__main__':
         results = pool.map(find_primes, chunks)
     
     # Объединяем результаты
+    # Строка комментария 
     primes_multi = []
     for chunk_result in results:
         primes_multi.extend(chunk_result)
